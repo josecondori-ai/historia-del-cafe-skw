@@ -1,0 +1,175 @@
+/* Reset de estilos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fuente y estilo del cuerpo */
+  body {
+    background: #15181A;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+  
+  /* Contenedor principal de las páginas */
+  .skw-pages {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+  
+  /* Estilos generales de cada página */
+  .skw-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Mitades de cada página */
+  .skw-page__half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    transition: transform 1s;
+  }
+  
+  .skw-page__half--left {
+    left: 0;
+    transform: translate3d(-32.4vh, 100%, 0);
+  }
+  
+  .skw-page__half--right {
+    left: 50%;
+    transform: translate3d(32.4vh, -100%, 0);
+  }
+  
+  /* Activar la transformación al estar activo */
+  .skw-page.active .skw-page__half {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  /* Elemento skewed dentro de cada mitad */
+  .skw-page__skewed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    transform: skewX(-18deg);
+    background: #000;
+  }
+  
+  .skw-page__half--left .skw-page__skewed {
+    left: -40%;
+  }
+  
+  .skw-page__half--right .skw-page__skewed {
+    right: -40%;
+  }
+  
+  /* Contenido de cada página */
+  .skw-page__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30%;
+    color: #fff;
+    transform: skewX(18deg);
+    transition: transform 1s, opacity 1s;
+    background-size: cover;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skw-page__half--left .skw-page__content {
+    padding-left: 30%;
+    padding-right: 30%;
+    transform-origin: 100% 0;
+  }
+  
+  .skw-page__half--right .skw-page__content {
+    padding-left: 30%;
+    padding-right: 30%;
+    transform-origin: 0 100%;
+  }
+  
+  /* Estado inactivo de la página */
+  .skw-page.inactive .skw-page__content {
+    opacity: 0.5;
+    transform: skewX(18deg) scale(0.95);
+  }
+  
+  /* Encabezado de cada sección */
+  .skw-page__heading {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* Descripción de cada sección */
+  .skw-page__description {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  /* Enlaces dentro de cada sección */
+  .skw-page__link {
+    color: #FFA0A0;
+  }
+  
+  /* Estilos específicos para cada página */
+  
+  /* Página 1 */
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+    background-image: url('../img/cafe1.jpg');
+  }
+  
+  .skw-page-1 .skw-page__half--right .skw-page__content {
+    background: #004d40;
+  }
+  
+  /* Página 2 */
+  .skw-page-2 .skw-page__half--left .skw-page__content {
+    background: #800020;
+  }
+  
+  .skw-page-2 .skw-page__half--right .skw-page__content {
+    background-image: url('../img/cafe2.jpg');
+  }
+  
+  /* Página 3 */
+  .skw-page-3 .skw-page__half--left .skw-page__content {
+    background-image: url('../img/cafe3.jpg');
+  }
+  
+  .skw-page-3 .skw-page__half--right .skw-page__content {
+    background: #4b0082;
+  }
+  
+  /* Página 4 */
+  .skw-page-4 .skw-page__half--left .skw-page__content {
+    background: #003366;
+  }
+  
+  .skw-page-4 .skw-page__half--right .skw-page__content {
+    background-image: url('../img/cafe4.jpg');
+  }
+  
+  /* Página 5 */
+  .skw-page-5 .skw-page__half--left .skw-page__content {
+    background-image: url('../img/cefe5.jpg');
+  }
+  
+  .skw-page-5 .skw-page__half--right .skw-page__content {
+    background: #1c1c1c;
+  }
+  
