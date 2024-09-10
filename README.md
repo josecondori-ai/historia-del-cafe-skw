@@ -1,5 +1,9 @@
 # Skewed One Page Scroll Project
 
+
+https://github.com/user-attachments/assets/ea806ff9-2ee9-4aff-bfc9-078227be3809
+
+
 ## Visión General 🌟
 Este proyecto es una innovadora experiencia de navegación en una sola página, utilizando un diseño de desplazamiento inclinado para crear una experiencia visualmente atractiva. Está diseñado para ofrecer una interfaz de usuario moderna con efectos de desplazamiento únicos y un contenido estilizado que resalta la información de manera efectiva.
 
