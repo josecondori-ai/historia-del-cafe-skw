@@ -19,7 +19,7 @@ Este proyecto es una innovadora experiencia de navegación en una sola página, 
 - **JavaScript:** Manejo de la navegación y animaciones para el desplazamiento entre secciones.
 
 ## Demostración 🎥
-Puedes ver una demostración en vivo del proyecto en el siguiente enlace: [Enlace a la Demostración](#)
+Puedes ver una demostración en vivo del proyecto en el siguiente enlace: [Enlace a la Demostración](https://josecondori-ai.github.io/historia-del-cafe-skw/)
 
 ## 🚀 Cómo Usar
 1.  Clona el repositorio:
